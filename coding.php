@@ -1,5 +1,6 @@
 <?php
-    include_once __DIR__ . '/classes/domestic_appliances.php'
+    include_once __DIR__ . '/classes/domestic_appliances.php';
+    include_once __DIR__ . '/classes/pc.php';
 ?>
 
 
@@ -34,7 +35,14 @@
         </section>
 
         <section>
-            <h2>section</h2>
+        <h2>L'indirizzo di spedizione del tuo computer è: </h2>
+        <?php
+        $pc = new pc('Dell','Computer', '700');
+        $pc->setAddress('Via Garibaldi 1000');
+        //var_dump($pc);
+        
+        ?>
+        <?php echo $pc->address; ?>
         </section>
     </main>
     

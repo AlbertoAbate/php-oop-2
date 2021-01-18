@@ -11,6 +11,8 @@ class pc extends Product {
         $this->address = $address;
     }
 
-    public function getAddress($address) {
+    public function getAddress() {
         return $this->$address;
     }
+
+}
